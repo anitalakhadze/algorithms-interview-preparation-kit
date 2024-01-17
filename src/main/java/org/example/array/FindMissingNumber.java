@@ -33,9 +33,10 @@ public class FindMissingNumber {
     }
 
     /**
-     * Approach 2: Natural Sum
+     * Approach 2: Natural Sum (O(n))
      * The sum of first N natural numbers is N*(N+1)/2
      * The sum of elements in the array is calculated and the difference between the two is the missing number
+     * May be prone to integer overflow if the array is large.
      */
     private static int findMissingNumberWithNaturalSum(int[] arr) {
         int arrSum = 0;
